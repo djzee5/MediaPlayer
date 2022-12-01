@@ -1,0 +1,5 @@
+.fwd_btn {-fx-background-image:url("/application/forwardbtn.jpg") }
+.play_btn {-fx-background-image:url("/application/playbtn.jpg") }
+.pause_btn {-fx-background-image:url("/application/pausebtn.jpg") }
+.rew_btn {-fx-background-image:url("/application/rewindbtn.jpg") }
+.reset_btn {-fx-background-image:url("/application/resetbtn.jpg") }
