@@ -28,13 +28,14 @@ public class Controller implements Initializable{
 	@FXML
 	private Label songLabel;
 	@FXML
-	private Button playButton, pauseButton, resetButton, previousButton, nextButton;
+	private Button playButton, pauseButton, resetButton, rewindButton, forwardButton,previousButton,nextButton,fwd_btn, play_btn, pause_btn, rew_btn,reset_btn;
 	@FXML
 	private ComboBox<String> speedBox;
 	@FXML
 	private Slider volumeSlider;
 	@FXML
 	private ProgressBar songProgressBar;
+	 
 	
 	private Media media;
 	private MediaPlayer mediaPlayer;
@@ -113,7 +114,15 @@ public class Controller implements Initializable{
 		mediaPlayer.seek(Duration.seconds(0));
 	}
 	
-	public void previousMedia() {
+	public void rewindMedia(ActionEvent event) {
+		mediaPlayer.seek(mediaPlayer.getCurrentTime().add(Duration.seconds(-5)));
+	}
+	
+	public void forwardMedia(ActionEvent event) {
+		mediaPlayer.seek(mediaPlayer.getCurrentTime().add(Duration.seconds(5)));
+	}
+	
+    public void previousMedia() {
 		
 		if(songNumber > 0) {
 			
@@ -187,6 +196,7 @@ public class Controller implements Initializable{
 			playMedia();
 		}
 	}
+	
 	
 	public void changeSpeed(ActionEvent event) {
 		
