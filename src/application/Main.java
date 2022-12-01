@@ -15,11 +15,13 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage stage) throws IOException {
-       
-		Parent root = FXMLLoader.load(getClass().getResource("Scene.fxml"));
+		
+		
+       //This access the fxml file that we created from scene builder
+		Parent root = FXMLLoader.load(getClass().getResource("Scener.fxml"));
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
-		stage.show();
+		stage.show(); //Shows the output
 		
 		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 
