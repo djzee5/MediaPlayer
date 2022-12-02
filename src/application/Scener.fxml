@@ -18,12 +18,12 @@
       <ProgressBar fx:id="songProgressBar" layoutY="131.0" prefHeight="20.0" prefWidth="844.0" progress="0.0" />
       <Button fx:id="playButton" layoutX="5.0" layoutY="178.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="70.0" prefWidth="81.0" styleClass="play_btn" stylesheets="@style.css" />
       <Button fx:id="pauseButton" layoutX="103.0" layoutY="178.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="70.0" prefWidth="81.0" styleClass="pause_btn" stylesheets="@style.css" />
-      <Button fx:id="resetButton" layoutX="203.0" layoutY="178.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="70.0" prefWidth="81.0" styleClass="reset_btn" stylesheets="@style.css" />
+      <Button fx:id="stopButton" layoutX="203.0" layoutY="178.0" mnemonicParsing="false" onAction="#stopMedia" prefHeight="70.0" prefWidth="81.0" styleClass="stop_btn" stylesheets="@style.css" />
       <Button fx:id="forwardButton" layoutX="402.0" layoutY="178.0" mnemonicParsing="false" onAction="#forwardMedia" prefHeight="70.0" prefWidth="81.0" styleClass="fwd_btn" stylesheets="@style.css" />
       <Slider fx:id="volumeSlider" layoutX="503.0" layoutY="159.0" max="200.0" prefHeight="41.0" prefWidth="140.0" value="100.0" />
       <ComboBox fx:id="speedBox" layoutX="511.0" layoutY="204.0" onAction="#changeSpeed" prefHeight="41.0" prefWidth="124.0" promptText="SPEED" style="-fx-background-color: #1cabf8;" />
       <Button fx:id="previousButton" layoutX="675.0" layoutY="166.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="41.0" prefWidth="116.0" style="-fx-background-color: #1cabf8;" text="PREV" />
       <Button fx:id="nextButton" layoutX="675.0" layoutY="213.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="41.0" prefWidth="116.0" style="-fx-background-color: #1cabf8;" text="NEXT" />
-      <Button fx:id="resetButton1" layoutX="305.0" layoutY="178.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="70.0" prefWidth="81.0" styleClass="rew_btn" stylesheets="@style.css" />
+      <Button fx:id="rewindButton" layoutX="305.0" layoutY="178.0" mnemonicParsing="false" onAction="#rewindMedia" prefHeight="70.0" prefWidth="81.0" styleClass="rew_btn" stylesheets="@style.css" />
    </children>
 </AnchorPane>

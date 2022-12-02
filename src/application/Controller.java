@@ -30,7 +30,7 @@ public class Controller implements Initializable{
 	@FXML
 	private Label songLabel; //This is for the name of the song currently playing
 	@FXML
-	private Button playButton, pauseButton, resetButton, rewindButton, forwardButton,previousButton,nextButton,fwd_btn, play_btn, pause_btn, rew_btn,reset_btn; //This is the controls
+	private Button playButton, pauseButton, stopButton,resetButton, rewindButton, forwardButton,previousButton,nextButton,fwd_btn, play_btn, pause_btn, rew_btn,reset_btn; //This is the controls
 	@FXML
 	private ComboBox<String> speedBox; //The speed button to change speed
 	@FXML
@@ -120,13 +120,18 @@ public class Controller implements Initializable{
 		mediaPlayer.pause();
 	}
 	
+	//This stops the music
+	public void stopMedia() {
+		cancelTimer();
+		mediaPlayer.stop();
+	}
 	
-    //This function restarts the song when you click on the button
+    /* This function restarts the song when you click on the button
 	public void resetMedia() {
 		
 		songProgressBar.setProgress(0);
 		mediaPlayer.seek(Duration.seconds(0));
-	}
+	} */
 	
 	
     //This function rewinds the song when you click on the button
